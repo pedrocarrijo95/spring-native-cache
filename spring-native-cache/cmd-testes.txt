@@ -1,0 +1,14 @@
+#-default jar
+mvn clean package
+
+#-default native
+mvn clean package -Pnative
+mvn -Pnative native:compile
+
+#-pgo native
+mvn clean package -Pnative
+mvn -Pnative native:compile -Dnative-image.args=--pgo-instrument
+mvn -Pnative native:compile -Dnative-image.args=--pgo=default.iprof
+
+#monitorar cpu&ram
+top -p $(pgrep -f demo_bff)
