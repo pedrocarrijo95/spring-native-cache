@@ -1,1 +1,68 @@
-# spring-native-cache
+# ⚡️ Spring + Native + Cache - GraalVM Performance Lab
+
+This straightforward guide shows how I migrated to GraalVM, validated dependencies, configured reflection, and achieved real performance gains using JMeter and build optimizations.
+
+A high-performance application built with Spring Boot 3.4.x and Caffeine cache, optimized with GraalVM Native Image. 
+
+This project demonstrates how to reduce startup time, CPU, and memory usage dramatically, achieving up to **35x faster startup**, **over 86% less CPU**, and **50% less memory**.
+
+> 📘 This project is explained in detail on the blog:  
+> **"5 simple steps that will eliminate cold starts and high CPU in cloud-native Java apps"**  
+> 👉 [Read the article here](https://seu-blog.com/spring-native-bff-performance)
+
+---
+
+## 🚀 Results
+
+| Metric              | JVM (.jar)   | Native Image | Gain             |
+|---------------------|--------------|---------------|------------------|
+| Startup Time        | 1.86s        | 0.052s        | **35.8x faster** |
+| CPU Usage (avg)     | 15%          | 2%            | **86.6% less**   |
+| Memory Usage (avg)  | 0.8%         | 0.4%          | **50% less**     |
+
+---
+
+## 🔧 How to Run
+
+### 1. Clone the repo
+
+```bash
+git clone https://github.com/your-user/spring-native-bff-performance.git
+cd spring-native-cache
+```
+
+### 2. Build the project with AOT (Ahead-of-Time)
+
+```bash
+mvn clean package -Pnative
+```
+
+### 3. Generate the native executable (GraalVM required)
+
+```bash
+mvn -Pnative native:compile
+```
+
+### 4. Run the native binary
+
+```bash
+cd target
+./spring-native-cache
+```
+
+## 📦 Requirements
+- Java 21 (GraalVM Enterprise Edition)
+- Maven 3.9+
+- Spring Boot 3.4+
+- Native Image tool installed (gu install native-image if needed
+
+## 📈 Features
+- ✅ Spring Boot (@RestController)
+- ✅ Caffeine Cache
+- ✅ Native Image build
+- ✅ CPU, Memory & Startup optimizations
+- ✅ Structure ready for PGO (Profile-Guided Optimization)
+- ✅ Performance comparison friendly (JMeter + top)
+
+## 📈 Contribute
+Feel free to fork, test with Redis or Prometheus, or even adapt for your own use cases.
