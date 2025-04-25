@@ -27,11 +27,11 @@ This project demonstrates how to reduce startup time, CPU, and memory usage dram
 ### 1. Clone the repo
 
 ```bash
-git clone https://github.com/your-user/spring-native-bff-performance.git
+git clone https://github.com/pedrocarrijo95/spring-native-cache.git
 cd spring-native-cache
 ```
 
-### 2. Build the project with AOT (Ahead-of-Time)
+### 2. Build the project with AOT (Ahead-of-Time - GraalVM required)
 
 ```bash
 mvn clean package -Pnative
@@ -51,10 +51,9 @@ cd target
 ```
 
 ## 📦 Requirements
-- Java 21 (GraalVM Enterprise Edition)
+- GraalVM JDK 21+
 - Maven 3.9+
 - Spring Boot 3.4+
-- Native Image tool installed (gu install native-image if needed
 
 ## 📈 Features
 - ✅ Spring Boot (@RestController)
