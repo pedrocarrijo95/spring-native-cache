@@ -30,8 +30,13 @@ This project demonstrates how to reduce startup time, CPU, and memory usage dram
 git clone https://github.com/pedrocarrijo95/spring-native-cache.git
 cd spring-native-cache
 ```
+### 2. Add reflection configurations
+```bash
+mvn clean package
+java -agentlib:native-image-agent=config-output-dir=src/main/resources/META-INF/native-image -jar target/your-app.jar
+```
 
-### 2. Build the project with AOT (Ahead-of-Time - GraalVM required)
+### 3. Build the project with AOT (Ahead-of-Time - GraalVM required)
 
 ```bash
 mvn clean package -Pnative
