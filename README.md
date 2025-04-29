@@ -36,16 +36,10 @@ mvn clean package
 java -agentlib:native-image-agent=config-output-dir=src/main/resources/META-INF/native-image -jar target/your-app.jar
 ```
 
-### 3. Build the project with AOT (Ahead-of-Time - GraalVM required)
+### 3. Build the project and Generate the native executable with AOT (Ahead-of-Time - GraalVM required)
 
 ```bash
 mvn clean package -Pnative
-```
-
-### 3. Generate the native executable (GraalVM required)
-
-```bash
-mvn -Pnative native:compile
 ```
 
 ### 4. Run the native binary
