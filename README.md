@@ -8,7 +8,7 @@ This project demonstrates how to reduce startup time, CPU, and memory usage dram
 
 > 📘 This project is explained in detail on the blog:  
 > **"5 simple steps that will eliminate cold starts and high CPU in cloud-native Java apps"**  
-> 👉 [Read the article here](https://seu-blog.com/spring-native-bff-performance)
+> 👉 [Read the article here](https://pedrocarrijodev.wordpress.com/2025/04/25/%f0%9f%a7%a0-5-simple-steps-that-will-eliminate-cold-starts-and-high-cpu-in-cloud-native-java-apps-80-%f0%9f%98%b1/)
 
 ---
 
