@@ -80,7 +80,7 @@
 					<buildArgs>
 						<buildArg>-H:Optimize=3</buildArg>
 					</buildArgs>
-					<mainClass>com.pedrocarrijo.bff.demo_bff.DemoBffApplication</mainClass>
+					<mainClass>com.pedrocarrijo.bff.spring_native_cache.SpringNativeCacheApplication</mainClass>
 				</configuration>
 			
 			</plugin>

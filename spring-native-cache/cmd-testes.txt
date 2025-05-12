@@ -11,4 +11,4 @@ mvn -Pnative native:compile -Dnative-image.args=--pgo-instrument
 mvn -Pnative native:compile -Dnative-image.args=--pgo=default.iprof
 
 #monitorar cpu&ram
-top -p $(pgrep -f demo_bff)
+top -p $(pgrep -f spring_native_cache)
