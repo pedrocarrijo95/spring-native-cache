@@ -10,6 +10,8 @@ This project demonstrates how to reduce startup time, CPU, and memory usage dram
 > **"5 simple steps that will eliminate cold starts and high CPU in cloud-native Java apps"**  
 > 👉 [Read the article here](https://pedrocarrijodev.wordpress.com/2025/04/25/%f0%9f%a7%a0-5-simple-steps-that-will-eliminate-cold-starts-and-high-cpu-in-cloud-native-java-apps-80-%f0%9f%98%b1/)
 
+> Video Demo: https://www.youtube.com/watch?v=Qo3vOBDpvSg
+
 ---
 
 ## 🚀 Results
